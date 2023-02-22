@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
@@ -19,205 +20,223 @@
 	</head>
 	<body>
 		<!--Main-->
-		<div class="main">
+		<main class="main">
 			<!--Main content-->
-			<div class="maincontent">
+			<div class="main__content">
 				<!--About User-->
 				<div class="about">
-					<h2 class="about-position">Front-end developer</h2>
-					<h1 class="about-name">Sulihan Kyrylo</h1>
-					<p class="about-desc">
-						I am a Front-end developer from Odessa, Ukraine, currently in Lviv. My skill stack is: HTML, CSS,
-						Javascript, React and I am learning Node.js and Typescript. I am familiar with an Agile/Scrum methodology
-						and have an experience of using it in team projects. I am a versatile, fast-learner, attentive to details,
-						responsible and reliable person. Beside software development, I also have team-leading experience in SMM,
-						ORM and SERM projects. I have been interested in the field of IT since a very young age and have worked in
-						related fields almost all my life.
+					<p class="about__position">Front-end developer</p>
+					<h1 class="about__name">Sulihan Kyrylo</h1>
+					<p class="about__desc">
+						I am a Front-end developer from Odessa, Ukraine, currently in Lviv. I have been interested in the field of
+						IT since a very young age and have worked in related fields almost all my life.
+					</p>
+					<p class="about__desc">
+						My skill stack is: HTML, CSS, Javascript, React and I am learning Node.js and Typescript. I am familiar with
+						an Agile/Scrum methodology and have an experience of using it in team projects. I am a versatile,
+						fast-learner, attentive to details, responsible and reliable person.
+					</p>
+					<p class="about__desc">
+						Beside software development, I also have team-leading experience in SMM, ORM and SERM projects.
 					</p>
 				</div>
-				<div>
+				<div class="projects">
 					<h3 class="title">Projects</h3>
-					<ol>
-						<li>Foodsta</li>
-						<li>Filmoteka</li>
-						<li>WebStudio</li>
+					<ol class="num-list">
+						<li class="projects__item">
+							<a
+								href="https://paulhighrow.github.io/goit-markup-hw-08/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="projects__link"
+							>
+								WebStudio - [HTML, SCSS, Javascript]
+								<svg class="projects__icon">
+									<use href="./img/sprite.svg#github"></use>
+								</svg>
+							</a>
+							<p class="projects__desc">
+								Personal project, one-page website for a webstudio with an adaptive design, burger menu and a modal
+								window.
+							</p>
+						</li>
+						<li class="projects__item">
+							<a
+								href="https://paulhighrow.github.io/goit-markup-scp-2268-project/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="projects__link"
+							>
+								Foodsta - [HTML, SCSS, Javascript, Parcel]
+								<svg class="projects__icon">
+									<use href="./img/sprite.svg#github"></use>
+								</svg>
+							</a>
+							<p class="projects__desc">
+								Team project, one-page website for a food-delivery company. Adaptive design, burger menu, input
+								validation, modal window.
+								<span class="projects__role">Role - Team Lead</span>
+							</p>
+						</li>
+						<li class="projects__item">
+							<a
+								href="https://paulhighrow.github.io/just-do-it/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="projects__link"
+							>
+								Filmoteka - [HTML, SCSS, Javascript, Parcel, REST API, AJAX]
+								<svg class="projects__icon">
+									<use href="./img/sprite.svg#github"></use>
+								</svg>
+							</a>
+							<p class="projects__desc">
+								Team project, two-pages website for a movie catalogue. Adaptive design, dark theme, pagination,
+								searchbar and movie library with ability to add titles to "queue" or "watched".
+								<span class="projects__role">Role - Team Lead</span>
+							</p>
+						</li>
 					</ol>
 				</div>
 
-				<!--Languages-->
-				<div class="lang">
-					<h3 class="title">Languages</h3>
-					<ol class="lang-list">
-						<li class="lang-list-num">
-							<span class="lang">
-								Ukrainian
-								<span class="dots">...........</span>
-								<span class="lang-bracket">[</span>
-								Native
-								<span class="lang-bracket">]</span>
-							</span>
-						</li>
-						<li class="lang-list-num">
-							<span class="lang">
-								English
-								<span class="dots">................</span>
-								<span class="lang-bracket">[</span>
-								Upper-Intermediate
-								<span class="lang-bracket">]</span>
-							</span>
-						</li>
-						<li class="lang-list-num">
-							<span class="lang">
-								Russian
-								<span class="dots">...............</span>
-								<span class="lang-bracket">[</span>
-								Native
-								<span class="lang-bracket">]</span>
-							</span>
-						</li>
-					</ol>
-				</div>
 				<!--Work-->
 				<div class="work">
 					<h3 class="title">Work Experience</h3>
 					<!--Company 1-->
-					<div>
-						<h4 class="work-position">
-							Project Manager
-							<span class="work-company">G3 Group</span>
-						</h4>
-						<p class="period">
-							January 2020 - February 2022
-							<a
-								href="https://pictures.telegram-store.com/channels/retranslyator/12462_2021_06_16_1_.jpg"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="pipe"
-							>
-								|
-							</a>
-							Ukraine
-						</p>
-						<ul class="work-list">
-							<li class="work-list-item">
-								<span class="work-text">Staff recruitment and training, supervising and delegation of duties</span>
-							</li>
-							<li class="work-list-item">
-								<span class="work-text">Configuration and maintenance of data monitoring and processing software</span>
-							</li>
-							<li class="work-list-item">
-								<span class="work-text">
-									Maintaining direct contact with the customer, ensuring prompt completion of given tasks
-								</span>
-							</li>
-							<li class="work-list-item">
-								<span class="work-text">
-									Conducting complex research on a social media platforms and producing analytical reports
-								</span>
-							</li>
-						</ul>
-					</div>
-					<!--Company 2-->
-					<div>
-						<h4 class="work-position">
-							Head of Monitoring & analytics department
-							<span class="work-company">G3 Group</span>
-						</h4>
-						<p class="period">
-							September 2017 - January 2020
-							<span class="pipe">|</span>
-							Ukraine
-						</p>
-						<ul class="work-list">
-							<li class="work-list-item">
-								<span class="work-text">Staff recruitment and training</span>
-							</li>
-							<li class="work-list-item">
-								<span class="work-text">
-									Configuration of data monitoring software to meet requirements of different projects
-								</span>
-							</li>
-							<li class="work-list-item">
-								<span class="work-text">Supervising the work of subordinates</span>
-							</li>
-						</ul>
-					</div>
-					<!--Company 3-->
-					<div>
-						<h4 class="work-position">
-							Monitoring analyst
-							<span class="work-company">G3 Group</span>
-						</h4>
-						<p class="period">
-							April 2016 - September 2017
-							<span class="pipe">|</span>
-							Ukraine
-						</p>
-						<ul class="work-list">
-							<li class="work-list-item">
-								<span class="work-text">Live media and social media monitoring</span>
-							</li>
-							<li class="work-list-item">
-								<span class="work-text">Use of data monitoring software</span>
-							</li>
-							<li class="work-list-item">
-								<span class="work-text">Producing of analytical reports on the collected data</span>
-							</li>
-						</ul>
-					</div>
-					<!--Company 4-->
-					<div>
-						<h4 class="work-position">
-							QA Software Tester
-							<span class="work-company">G3 Group</span>
-						</h4>
-						<p class="period">
-							June 2014 - March 2016
-							<span class="pipe">|</span>
-							Ukraine
-						</p>
-						<ul class="work-list">
-							<li class="work-list-item">
-								<span class="work-text">Testing software by existing test scenarios</span>
-							</li>
-							<li class="work-list-item">
-								<span class="work-text">Reviewing and analysis of software responses</span>
-							</li>
-							<li class="work-list-item">
-								<span class="work-text">Creating reports containing test results</span>
-							</li>
-						</ul>
-					</div>
-					<!--Company 5-->
-					<div>
-						<h4 class="work-position">
-							Service Engineer
-							<span class="work-company">Service Center IP Sulihan</span>
-						</h4>
-						<p class="period">
-							June 2008 - May 2014
-							<span class="pipe">|</span>
-							Ukraine
-						</p>
-						<ul class="work-list">
-							<li class="work-list-item">
-								<span class="work-text">Installation, maintenance and servicing of computer hardware</span>
-							</li>
-							<li class="work-list-item">
-								<span class="work-text">Configuration of computer software and operating systems</span>
-							</li>
-							<li class="work-list-item"><span class="work-text">Computer hardware sales</span></li>
-							<li class="work-list-item"><span class="work-text">Customer service</span></li>
-						</ul>
-					</div>
+					<ul class="work-list">
+						<li>
+							<h4>
+								Project Manager
+								<span class="work-company">G3 Group</span>
+							</h4>
+							<p class="period">
+								January 2020 - February 2022
+								<a
+									href="https://img-9gag-fun.9cache.com/photo/a7ENmVx_700bwp.webp"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="pipe"
+								>
+									|
+								</a>
+								Ukraine
+							</p>
+							<ul class="resp-list">
+								<li>
+									<span>Staff recruitment and training, supervising and delegation of duties</span>
+								</li>
+								<li>
+									<span>Configuration and maintenance of data monitoring and processing software</span>
+								</li>
+								<li>
+									<span>Maintaining direct contact with the customer, ensuring prompt completion of given tasks</span>
+								</li>
+								<li>
+									<span>Conducting complex research on a social media platforms and producing analytical reports</span>
+								</li>
+							</ul>
+						</li>
+
+						<!--Company 2-->
+						<li>
+							<h4>
+								Head of Monitoring & analytics department
+								<span class="work-company">G3 Group</span>
+							</h4>
+							<p class="period">
+								September 2017 - January 2020
+								<span class="pipe">|</span>
+								Ukraine
+							</p>
+							<ul class="resp-list">
+								<li>
+									<span>Staff recruitment and training</span>
+								</li>
+								<li>
+									<span>Configuration of data monitoring software to meet requirements of different projects</span>
+								</li>
+								<li>
+									<span>Supervising the resp of subordinates</span>
+								</li>
+							</ul>
+						</li>
+						<!--Company 3-->
+						<li>
+							<h4>
+								Monitoring analyst
+								<span class="work-company">G3 Group</span>
+							</h4>
+							<p class="period">
+								April 2016 - September 2017
+								<span class="pipe">|</span>
+								Ukraine
+							</p>
+							<ul class="resp-list">
+								<li>
+									<span>Live media and social media monitoring</span>
+								</li>
+								<li>
+									<span>Use of data monitoring software</span>
+								</li>
+								<li>
+									<span>Producing of analytical reports on the collected data</span>
+								</li>
+							</ul>
+						</li>
+						<!--Company 4-->
+						<li>
+							<h4>
+								QA Software Tester
+								<span class="work-company">G3 Group</span>
+							</h4>
+							<p class="period">
+								June 2014 - March 2016
+								<span class="pipe">|</span>
+								Ukraine
+							</p>
+							<ul class="resp-list">
+								<li>
+									<span>Testing software by existing test scenarios</span>
+								</li>
+								<li>
+									<span>Reviewing and analysis of software responses</span>
+								</li>
+								<li>
+									<span>Creating reports containing test results</span>
+								</li>
+							</ul>
+						</li>
+						<!--Company 5-->
+						<li>
+							<h4>
+								Service Engineer
+								<span class="work-company">Service Center IP Sulihan</span>
+							</h4>
+							<p class="period">
+								June 2008 - May 2014
+								<span class="pipe">|</span>
+								Ukraine
+							</p>
+							<ul class="resp-list">
+								<li>
+									<span>Installation, maintenance and servicing of computer hardware</span>
+								</li>
+								<li>
+									<span>Configuration of computer software and operating systems</span>
+								</li>
+								<li><span>Computer hardware sales</span></li>
+								<li><span>Customer service</span></li>
+							</ul>
+						</li>
+					</ul>
 				</div>
 				<!--Education-->
 				<div class="edu">
 					<h3 class="title">Education</h3>
-					<h4 class="university">O. S. Popov Odessa national academy of telecommunications</h4>
-					<p class="faculty">Computer Technologies</p>
+					<h4 class="university">IT School GoIT</h4>
+					<p class="faculty">Fullstack Developer</p>
 					<p class="period">
-						September 2008 - June 2010
+						June 2022 - May 2023
 						<span class="pipe">|</span>
 						Ukraine
 					</p>
@@ -225,6 +244,13 @@
 					<p class="faculty">Psychology</p>
 					<p class="period">
 						September 2010 - June 2014
+						<span class="pipe">|</span>
+						Ukraine
+					</p>
+					<h4 class="university">O. S. Popov Odessa national academy of telecommunications</h4>
+					<p class="faculty">Computer Technologies</p>
+					<p class="period">
+						September 2008 - June 2010
 						<span class="pipe">|</span>
 						Ukraine
 					</p>
@@ -236,22 +262,60 @@
 				<!--Contacts-->
 				<div class="contacts">
 					<h3 class="sidebar-title">Contacts</h3>
-					<div>
-						<p>
+					<ul class="contacts__list">
+						<li class="contacts__item">
 							<span class="contact-type">С:</span>
-							<a href="tel:+380638989102" class="contact-link">+38 063 898 91 02</a>
-						</p>
-						<p>
+							<a href="tel:+380638989102" target="_blank" class="contact-link">+38 063 898 91 02</a>
+						</li>
+						<li class="contacts__item">
 							<span class="contact-type">E:</span>
-							<a href="mailto:paulhighrow@gmail.com" class="contact-link">paulhighrow@gmail.com</a>
-						</p>
-						<p>
-							<span class="contact-type">A:</span>
-							<a href="https://goo.gl/maps/t5WNZbd6JGw4LPHR9" rel="noopener noreferrer nofollow" class="contact-link">
+							<a href="mailto:paulhighrow@gmail.com" target="_blank" class="contact-link">paulhighrow@gmail.com</a>
+						</li>
+						<li class="contacts__item">
+							<span class="contact-type">L:</span>
+							<a
+								href="https://goo.gl/maps/t5WNZbd6JGw4LPHR9"
+								target="_blank"
+								rel="noopener noreferrer nofollow"
+								class="contact-link"
+							>
 								Ukraine, Lviv
 							</a>
-						</p>
-					</div>
+						</li>
+					</ul>
+					<ul class="resources">
+						<li>
+							<a
+								href="https://www.linkedin.com/in/kyrylo-sulihan/"
+								class="resources__link"
+								target="_blank"
+								rel="noopener noreferrer nofollow"
+							>
+								<svg class="resources__icon">
+									<use href="./img/sprite.svg#linkedin"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://github.com/PaulHighrow"
+								class="resources__link"
+								target="_blank"
+								rel="noopener noreferrer nofollow"
+							>
+								<svg class="resources__icon">
+									<use href="./img/sprite.svg#github"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="https://t.me/highrow" class="resources__link" target="_blank" rel="noopener noreferrer nofollow">
+								<svg class="resources__icon">
+									<use href="./img/sprite.svg#telegram"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
 				</div>
 				<!--Tech Skills-->
 				<div class="tech-skills">
@@ -283,7 +347,40 @@
 						<li class="skills-lists-item"><span class="skills-lists-text">Attention to details</span></li>
 					</ul>
 				</div>
+				<!--Languages-->
+				<div class="lang">
+					<h3 class="sidebar-title">Languages</h3>
+					<ul class="skills-list">
+						<li class="skills-lists-item">
+							<span class="skills-lists-text">
+								Ukrainian
+
+								<span class="lang-bracket">[</span>
+								Native
+								<span class="lang-bracket">]</span>
+							</span>
+						</li>
+						<li class="skills-lists-item">
+							<span class="skills-lists-text">
+								English
+
+								<span class="lang-bracket">[</span>
+								Upper-Intermediate
+								<span class="lang-bracket">]</span>
+							</span>
+						</li>
+						<li class="skills-lists-item">
+							<span class="skills-lists-text">
+								Russian
+
+								<span class="lang-bracket">[</span>
+								Native
+								<span class="lang-bracket">]</span>
+							</span>
+						</li>
+					</ul>
+				</div>
 			</aside>
-		</div>
+		</main>
 	</body>
 </html>
