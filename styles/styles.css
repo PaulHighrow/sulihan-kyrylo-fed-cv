@@ -272,8 +272,11 @@ svg {
 	fill: currentColor;
 }
 
+.contact-link:hover,
 .resources__link:hover,
+.contact-link:focus,
 .resources__link:focus,
+.contact-link:active,
 .resources__link:active {
 	color: #fb6d3a;
 }
