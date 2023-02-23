@@ -76,6 +76,12 @@ svg {
 	margin-bottom: 30px;
 }
 
+.projects__linkbox {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
 .projects__item:not(:last-child) {
 	margin-bottom: 10px;
 }
@@ -88,9 +94,6 @@ svg {
 
 .projects__link {
 	text-decoration: none;
-	display: flex;
-	gap: 5px;
-	align-items: center;
 
 	color: #000000;
 
